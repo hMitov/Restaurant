@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="ReserveATable.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ReserveATable.js"></script>
+  </head>
+  <body>
+    <div class="upperPartOfPage">
+      <nav class="Navbar1">
+        <a href="Contacts.html">Contact us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Welcome.html">Welcome</a>
+        <a href="Home.html">Home</a>
+      </nav>
+
+      <div class="NameOfRestaurant">
+        <h2>RISTORANTE DELIZIOSO</h2>
+        <img id="flagOfItaly" src="https://cdn.countryflags.com/thumbs/italy/flag-400.png">
+      </div>
+    </div>
+
+    <img id="logo" src="https://www.flaticon.com/svg/static/icons/svg/348/348736.svg">
+
+    <div class="Prompt">
+      <h2>...DO NOT HASITATE!</h2>
+      <h1>MAKE A RESERVATION NOW!</h1>
+    </div>
+
+    <div class="ReservationBlank">
+      <h1>Reservation Blank</h1>
+      <h3>Please choose a day from below</h3>
+      <p>*If you are planning to make a reservation for a day that is in a longer period of time than a week, please write a message below!   </p>
+      <div class="DayOfTheWeek">
+        <div class="DayOfTheWeekDays">
+          <h4>Monday</h4>
+          <h4>Tuesday</h4>
+          <h4>Wednesday</h4>
+          <h4>Thursday</h4>
+          <h4>Friday</h4>
+          <h4>Saturday</h4>
+          <h4>Sunday</h4>
+        </div>
+        <div class="DayOfTheWeekInput">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+          <input type="radio" name="DayOfTheWeek">
+        </div>
+      </div>
+
+
+      <main>
+
+        <div class="Text">
+
+          <div class="leftPart">
+              <label id="nameLabel" for="Name">Name</label> <br>
+              <label id="emailLabel" for="Email">Email</label> <br>
+              <label id="telephoneLabel" for="Telephone">Telephone</label> <br>
+              <label id="Persons" for="Persons">Persons №</label> <br> <br>
+              <label id="MessageLabel" for="Message">Message</label> <br>
+          </div>
+
+          <div class="rightPart">
+             <input type="text" id="Name" placeholder="Mandatory Field"> <br>
+             <input type="text" id="Email" placeholder="Mandatory Field"> <br>
+             <input type="text" id="Telephone" placeholder="Mandatory Field"> <br>
+             <select name="cars" id="Persons">
+               <option value="1">1 person</option>
+               <option value="2">2 persons</option>
+               <option value="3">3 persons</option>
+               <option value="4">4 persons</option>
+               <option value="5">5 persons</option>
+               <option value="6">6 persons</option>
+               <option value="7">7 persons</option>
+               <option value="8">8 persons</option>
+               <option value="9">9 persons</option>
+               <option value="10">10 persons</option>
+             </select>
+             <p>*must be filled!</p>
+          </div>
+
+          <textarea id="Message" rows="10" cols="80"></textarea> <br>
+          <input id="Send" onclick="myFunction()" type="button" value="Send">
+
+        </div>
+
+        <div class="Table">
+          <h3>Please choose a table</h3>
+          <div class="LeftPic">
+            <img id="outside" src="https://news.artnet.com/app/news-upload/2019/04/GettyImages-550191579.jpg">
+            <input id="leftInput" type="radio" name="TablePos" value="leftInput">
+            <label for="leftInput">Outside</label>
+          </div>
+          <div class="RightPic">
+            <img id="inside" src="https://static.thatsup.co/content/img/place/r/i/ristorante-paganini-3.jpg">
+            <input id="rightInput" type="radio" name="TablePos" value="rightInput">
+            <label for="rightInput">Inside</label>
+          </div>
+          <p>*must be filled!</p>
+        </div>
+
+      </main>
+    </div>
+
+
+    <footer>
+      <div class="NameOfRestaurant">
+        <h2>RISTORANTE DELIZIOSO</h2>
+        <img id="flag" src="https://cdn.countryflags.com/thumbs/italy/flag-400.png">
+      </div>
+      <div class="social">
+        <img id="facebook" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384005.svg">
+        <img id="instagram" src="https://www.flaticon.com/svg/static/icons/svg/174/174855.svg">
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="Button" title="Go to top">Top</button>
+    <script src="GetToTop.js"> </script>
+
+  </body>
+</html>

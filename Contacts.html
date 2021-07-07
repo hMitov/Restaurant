@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contacts.css">
+    <script src="Contacts.js"></script>
+  </head>
+  <body>
+    <header class="upperPartOfPage">
+      <nav class="Navbar1">
+        <a href="Contacts.html">Contact us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Welcome.html">Welcome</a>
+        <a href="Home.html">Home</a>
+      </nav>
+
+      <div class="NameOfRestaurant">
+        <h2>RISTORANTE DELIZIOSO</h2>
+        <img id="flagOfItaly" src="https://cdn.countryflags.com/thumbs/italy/flag-400.png">
+      </div>
+    </header>
+
+    <main>
+      <div class="Text">
+        <div class="leftPart">
+          <h1>Contact form</h1>
+          <h2>For any request fill in the form below, you will be contacted as soon as possible.</h2>
+           <input type="text" placeholder="Name" id="Name"> <br>
+           <input type="text" placeholder="Email" id="Email"> <br>
+           <input type="text" placeholder="Telephone" id="Telephone"> <br>
+           <textarea id="Message" placeholder="Message" rows="10" cols="80"></textarea><br>
+           <input id="Send" onclick="myFunction()" type="button" value="Send">
+        </div>
+        <div class="rightPart">
+          <p id="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11197.250317197055!2d12.3399736!3d45.4433569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd65d8572da24ca4!2sAlgiubagio%20Restaurant!5e0!3m2!1sen!2sbg!4v1608207061298!5m2!1sen!2sbg"
+                                    width="600" height="505" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
+          </p>
+        </div>
+      </div>
+
+      <div class="MiddlePart">
+        <div class="PrivacyText">
+          <h1>Privacy Disclaimer</h1>
+          <p>Users contacting this website and/or its owners do so at their own discretion and provide any such personal details requested at their own risk. Your personal information is kept private and stored securely until a time it is no longer required or has no use, as detailed in the EU General Data Protection Regulation. Every effort has been made to ensure a safe and secure form to email submission process but advise users using such form to email processes that they do so at their own
+             risk. Read our privacy policy. For any clarification contact us: jj@algiubagio.net</p>
+        </div>
+
+        <div class="Contacts">
+          <h3>Contacts</h3> <br> <br>
+          <div class="middle">
+            <div class="leftPartContacts">
+                <img src="https://www.iconsdb.com/icons/preview/gray/house-xxl.png">
+                <img src="https://www.iconsdb.com/icons/preview/gray/email-xxl.png">
+                <img src="https://www.iconsdb.com/icons/preview/gray/phone-68-xxl.png">
+              </ul>
+            </div>
+            <div class="rightPartContacts">
+              <p>Fondamenta Nuove, Cannareggio 5039 - Venezia</p>
+              <p>jj@algiubagio.net</p>
+              <p>+39 (041) 52 36 084</p>
+            </div>
+          </div>
+
+          <h2>Working hours</h2>
+          <p id="workHours" >Opened from 12 am to 12pm every day!</p>
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer>
+      <div class="NameOfRestaurant">
+        <h2>RISTORANTE DELIZIOSO</h2>
+        <img id="flag" src="https://cdn.countryflags.com/thumbs/italy/flag-400.png">
+      </div>
+      <div class="social">
+        <img id="facebook" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384005.svg">
+        <img id="instagram" src="https://www.flaticon.com/svg/static/icons/svg/174/174855.svg">
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="Button" title="Go to top">Top</button>
+    <script src="GetToTop.js"> </script>
+
+  </body>
+</html>
